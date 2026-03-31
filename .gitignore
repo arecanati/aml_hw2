@@ -6,5 +6,7 @@ __pycache__/
 *.pyc
 data/raw/*
 !data/raw/.gitkeep
+!data/raw/bank-full.csv
+!data/raw/bank-names.txt
 reports/figures/*
 !reports/figures/.gitkeep
