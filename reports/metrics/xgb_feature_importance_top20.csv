@@ -1,5 +1,5 @@
 feature,importance
-cat__poutcome_success,0.26093248
+num__prior_success,0.26093248
 num__duration,0.0844939
 cat__contact_unknown,0.0683365
 cat__housing_no,0.05975465
