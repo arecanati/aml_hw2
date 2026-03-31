@@ -5,9 +5,6 @@ This project is set up to run the assignment end-to-end in a local notebook.
 ## Structure
 
 - `data/raw/`: original assignment data
-- `data/interim/`: temporary cleaned outputs
-- `data/processed/`: final modeling-ready data
-- `models/`: saved model artifacts
 - `notebooks/`: assignment notebook(s)
 - `reports/metrics/`: saved metrics, params, and summary CSVs
 - `reports/figures/`: saved report-ready PNG figures
