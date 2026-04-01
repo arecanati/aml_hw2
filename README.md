@@ -14,6 +14,7 @@ Predict whether a client subscribes to a term deposit (`y`) and compare model fa
 - Training time
 
 The notebook enforces a no-leakage workflow: split first, fit preprocessing on train only, transform validation/test with fitted train preprocessors.
+It also keeps validation for model selection and uses the test set only for final held-out evaluation.
 
 ## Repository Structure
 
@@ -67,6 +68,13 @@ Then open and run all cells in:
 
 - `notebooks/bank_marketing_xgb_vs_mlp.ipynb`
 
+Headless reproducible execution option:
+
+```powershell
+.\.venv\Scripts\Activate.ps1
+jupyter nbconvert --to notebook --execute --inplace .\notebooks\bank_marketing_xgb_vs_mlp.ipynb
+```
+
 ## Generated Outputs
 
 Metrics and artifacts are written to:
@@ -83,8 +91,11 @@ Figures are written to:
 - `reports/figures/xgb_train_val_loss.png`
 - `reports/figures/xgb_feature_importance_top20.png`
 - `reports/figures/xgb_learning_rate_comparison.png`
+- `reports/figures/xgb_learning_rate_sensitivity_from_trials.png`
 - `reports/figures/mlp_loss_curve.png`
 - `reports/figures/mlp_architecture_comparison.png`
+- `reports/figures/mlp_depth_width_effect.png`
+- `reports/figures/mlp_learning_rate_sensitivity_from_trials.png`
 - `reports/figures/test_pr_curves.png`
 - `reports/figures/model_comparison_metrics.png`
 
