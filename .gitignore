@@ -9,4 +9,3 @@ data/raw/*
 !data/raw/bank-names.txt
 reports/figures/*
 !reports/figures/.gitkeep
-reports/assignment2_report_draft.txt
